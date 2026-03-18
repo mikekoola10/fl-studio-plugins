@@ -1,26 +1,56 @@
-# FL Studio Plugins by MikeKoola10
+# SpiralSynth AI
 
-This repository contains custom plugins, tools, and presets for FL Studio.
+SpiralSynth AI is a project that bridges AI-driven sound design with real-time plugin control, specifically designed for FL Studio.
 
-## Types
-- VST Plugins (C++ / JUCE)
-- FL Studio Patcher Presets
-- Python Scripts (Automation tools)
+## Architecture
 
-## Installation
+- **ai-engine (Python)**: Natural language processing for prompt-to-parameter mapping.
+- **fl-integration (Python)**: Logic for communicating with FL Studio automation.
+- **plugin-juce (C++ / JUCE)**: The VST3 synthesizer engine and UI.
+- **shared (JSON Schema)**: Unified parameter definitions used by both the AI and the plugin.
+- **presets/generated**: A folder for storing AI-generated sound presets.
+- **docs**: Project documentation and guides.
 
-### VST Plugins
-1. Copy .vst3 files to your VST folder
-2. Open FL Studio
-3. Go to: Options → Manage Plugins → Scan
+## Setup Instructions
 
-### Patcher Presets
-1. Drop into:
-   Documents/Image-Line/FL Studio/Presets/Patcher
+### Prerequisites
 
-### Scripts
-1. Place inside:
-   FL Studio/System/Hardware specific/
+- **Python 3.8+**
+- **CMake 3.15+**
+- **JUCE Framework**
+- **FL Studio 25+** (for integration testing)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/mikekoola10/fl-studio-plugins.git
+    cd fl-studio-plugins
+    ```
+
+2.  **Build the VST3 Plugin:**
+    ```bash
+    cd plugin-juce
+    mkdir build && cd build
+    cmake ..
+    cmake --build .
+    ```
+
+3.  **Run the AI Engine:**
+    ```bash
+    cd ai-engine
+    # Example usage (stub)
+    python3 parameter_mapper.py
+    ```
+
+## Roadmap
+
+- [ ] Complete AI prompt parsing with LLM integration.
+- [ ] Implement advanced DSP in the JUCE synthesizer.
+- [ ] Develop real-time FL Studio automation bridge.
+- [ ] Create a library of predefined style maps.
+- [ ] Add preset export/import via JSON schema.
 
 ## Goal
-Build powerful, creative tools for producers and creators.
+
+Provide a seamless experience where producers can describe a sound in plain English and have the plugin adjust its parameters in real-time within FL Studio.

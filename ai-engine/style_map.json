@@ -1,0 +1,14 @@
+{
+    "warm": {
+        "cutoff": 0.5,
+        "resonance": 0.2
+    },
+    "bright": {
+        "cutoff": 0.9,
+        "resonance": 0.1
+    },
+    "dark": {
+        "cutoff": 0.2,
+        "resonance": 0.4
+    }
+}

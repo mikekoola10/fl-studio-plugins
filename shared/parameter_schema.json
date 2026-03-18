@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SpiralSynthParameters",
+  "type": "object",
+  "properties": {
+    "cutoff": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1.0
+    },
+    "resonance": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1.0
+    },
+    "attack": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10.0
+    },
+    "decay": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10.0
+    },
+    "sustain": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1.0
+    },
+    "release": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10.0
+    }
+  },
+  "required": ["cutoff", "resonance"]
+}

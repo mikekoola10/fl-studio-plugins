@@ -13,13 +13,15 @@ FL Studio 25 supports various plugin formats, with **VST3** and **CLAP** being m
 
 ```
 fl-studio-plugins/
-├── CMakeLists.txt          # CMake build configuration
 ├── README.md               # This file
+├── plugins/                # Compiled plugin files (e.g., .vst3, .clap)
+│   └── (your plugin files go here)
 ├── src/                    # Source code for your plugins
-│   └── plugin.cpp          # Example plugin source file
-├── include/                # Header files
-├── build/                  # Build output directory
-└── res/                    # Resources (e.g., UI assets, presets)
+│   └── main.cpp            # Example plugin source file
+├── presets/                # Presets for instruments and effects
+│   └── patcher-presets/    # Patcher presets
+└── docs/                   # Documentation and guides
+    └── setup-guide.md      # Setup and build guide
 ```
 
 ## Getting Started
@@ -29,43 +31,23 @@ fl-studio-plugins/
 To develop VST3/CLAP plugins, you will need:
 
 *   A C++ compiler (e.g., GCC, Clang, MSVC)
-*   CMake (version 3.10 or higher)
+*   CMake (version 3.10 or higher) - *Note: CMakeLists.txt was removed for a simpler structure, but CMake is still recommended for complex C++ projects.*
 *   VST3 SDK (available from [Steinberg](https://www.steinberg.net/vst3sdk/))
 *   CLAP SDK (available from [github.com/free-audio/clap](https://github.com/free-audio/clap))
 *   An IDE (e.g., Visual Studio, CLion, VS Code) is recommended for a better development experience.
 
 ### Setup and Build Instructions
 
-1.  **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/mikekoola10/fl-studio-plugins.git
-    cd fl-studio-plugins
-    ```
-
-2.  **Obtain SDKs:**
-
-    Download and install the VST3 SDK and CLAP SDK. You will need to adjust the `CMakeLists.txt` file to point to the locations of these SDKs on your system.
-
-3.  **Build the plugins:**
-
-    ```bash
-    mkdir build
-    cd build
-    cmake ..
-    cmake --build .
-    ```
-
-    This will compile your plugins. The output files (e.g., `.vst3`, `.clap`) will be located in the `build` directory.
+Detailed setup and build instructions can be found in `docs/setup-guide.md`.
 
 ### Installing Plugins in FL Studio 25
 
-1.  **Locate your plugin files:** After building, find your `.vst3` and/or `.clap` files in the `build` directory.
+1.  **Locate your plugin files:** After building, find your `.vst3` and/or `.clap` files in the `plugins/` directory.
 
 2.  **Copy to FL Studio Plugin Folders:**
 
-    *   **VST3:** Copy your `.vst3` plugin to one of FL Studio\'s VST plugin scan paths. A common location is `C:\Program Files\Common Files\VST3` (Windows) or `/Library/Audio/Plug-Ins/VST3` (macOS).
-    *   **CLAP:** Copy your `.clap` plugin to a folder that FL Studio scans for CLAP plugins. There isn\'t a single standard location yet, so you might need to create a dedicated folder and add it to FL Studio\'s plugin search paths.
+    *   **VST3:** Copy your `.vst3` plugin to one of FL Studio\`s VST plugin scan paths. A common location is `C:\Program Files\Common Files\VST3` (Windows) or `/Library/Audio/Plug-Ins/VST3` (macOS).
+    *   **CLAP:** Copy your `.clap` plugin to a folder that FL Studio scans for CLAP plugins. There isn\`t a single standard location yet, so you might need to create a dedicated folder and add it to FL Studio\`s plugin search paths.
 
 3.  **Scan for plugins in FL Studio:**
 

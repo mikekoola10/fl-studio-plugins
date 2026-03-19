@@ -1,0 +1,15 @@
+{
+  "name": "dark_bass",
+  "parameters": {
+    "osc_type": "sine",
+    "detune": 0.12,
+    "cutoff": 57.856709957727446,
+    "resonance": 0.3,
+    "attack": 0.01,
+    "decay": 0.1917458023329689,
+    "sustain": 0.7,
+    "release": 0.5,
+    "reverb": 0.4,
+    "distortion": 0.7416757212931835
+  }
+}

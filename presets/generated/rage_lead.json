@@ -1,0 +1,15 @@
+{
+  "name": "rage_lead",
+  "parameters": {
+    "osc_type": "saw",
+    "detune": 0.5328299055135333,
+    "cutoff": 1975.2446790486676,
+    "resonance": 0.4248041843166616,
+    "attack": 0.01,
+    "decay": 0.2,
+    "sustain": 0.7,
+    "release": 0.5,
+    "reverb": 0.4,
+    "distortion": 0.9639404335201175
+  }
+}

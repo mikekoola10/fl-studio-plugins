@@ -1,0 +1,15 @@
+{
+  "name": "ambient_pad",
+  "parameters": {
+    "osc_type": "saw",
+    "detune": 0.07248355658142921,
+    "cutoff": 800,
+    "resonance": 0.3,
+    "attack": 0.38828657772442654,
+    "decay": 0.2,
+    "sustain": 0.7416810911447526,
+    "release": 0.9713500249218798,
+    "reverb": 0.6959145838898456,
+    "distortion": 0.6
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "dark_ambient_pad",
+  "parameters": {
+    "osc_type": "saw",
+    "detune": 0.07254645849821899,
+    "cutoff": 387.0972447749885,
+    "resonance": 0.3,
+    "attack": 0.30197747376229445,
+    "decay": 0.2,
+    "sustain": 0.8237921283300235,
+    "release": 0.9803364766347555,
+    "reverb": 0.6346726673057776,
+    "distortion": 0.5432559266599768
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "bright_pluck",
+  "parameters": {
+    "osc_type": "saw",
+    "detune": 0.12,
+    "cutoff": 2437.2132393636493,
+    "resonance": 0.7563428283955863,
+    "attack": 0.04712766382669256,
+    "decay": 0.17220420402244502,
+    "sustain": 0.005460616915295391,
+    "release": 0.20660949543982454,
+    "reverb": 0.4,
+    "distortion": 0.6
+  }
+}

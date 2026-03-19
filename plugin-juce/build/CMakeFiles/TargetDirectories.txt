@@ -1,0 +1,3 @@
+/home/ubuntu/fl-studio-plugins/plugin-juce/build/CMakeFiles/SynthEngine.dir
+/home/ubuntu/fl-studio-plugins/plugin-juce/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/fl-studio-plugins/plugin-juce/build/CMakeFiles/rebuild_cache.dir

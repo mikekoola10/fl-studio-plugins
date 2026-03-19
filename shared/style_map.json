@@ -1,0 +1,40 @@
+{
+    "dark": {
+        "cutoff": {"min": 100, "max": 500, "default": 300},
+        "distortion": {"min": 0.5, "max": 0.9, "default": 0.7}
+    },
+    "ambient": {
+        "reverb": {"min": 0.6, "max": 0.9, "default": 0.75},
+        "attack": {"min": 0.1, "max": 0.5, "default": 0.3},
+        "release": {"min": 0.8, "max": 1.0, "default": 0.9}
+    },
+    "pad": {
+        "sustain": {"min": 0.7, "max": 0.9, "default": 0.8},
+        "detune": {"min": 0.05, "max": 0.2, "default": 0.1}
+    },
+    "bass": {
+        "osc_type": "sine",
+        "cutoff": {"min": 50, "max": 200, "default": 120},
+        "decay": {"min": 0.05, "max": 0.2, "default": 0.1}
+    },
+    "rage": {
+        "osc_type": "saw",
+        "distortion": {"min": 0.7, "max": 1.0, "default": 0.85},
+        "detune": {"min": 0.3, "max": 0.6, "default": 0.45}
+    },
+    "lead": {
+        "osc_type": "saw",
+        "cutoff": {"min": 1000, "max": 2000, "default": 1500},
+        "resonance": {"min": 0.4, "max": 0.7, "default": 0.55}
+    },
+    "bright": {
+        "cutoff": {"min": 1500, "max": 3000, "default": 2200},
+        "resonance": {"min": 0.5, "max": 0.8, "default": 0.65}
+    },
+    "pluck": {
+        "attack": {"min": 0.01, "max": 0.05, "default": 0.02},
+        "decay": {"min": 0.1, "max": 0.3, "default": 0.2},
+        "sustain": {"min": 0.0, "max": 0.1, "default": 0.05},
+        "release": {"min": 0.2, "max": 0.4, "default": 0.3}
+    }
+}
